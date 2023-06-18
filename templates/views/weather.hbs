@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    {{>headerlinks}}
+</head>
+
+<body>
+    {{>navbar}}
+
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+
+                <div class="main_content">
+                    <form action="" class="temp_form">
+                        <input type="text" id="cityName" placeholder="Enter Your City Name" autocomplete="off">
+                        <input type="submit" value="Search" id="submitBtn">
+                    </form>
+                </div>
+
+                <div id="weather">
+
+                    <div id="left">
+
+                        <p id="feel">Feels Like:</p>
+                        <p id="pressure">Pressure:</p>
+                        <p id="humidity">Humidity:</p>
+
+                    </div>
+
+                    <div class="tempInformation">
+                        <div class="top_layer">
+                            <p id="day">tuesday</p>
+                            <p id="today_date">13_oct</p>
+                        </div>
+                        <div class="main_layer">
+                            <p id="city_name">get output</p>
+                            <div class="middle_layer data_hide">
+                                <p id="temp"><span>0</span>℃</p>
+                                <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="right">
+                        <p id="speed">Speed:</p>
+                        <p id="temp_min">Temp Min:</p>
+                        <p id="temp_max">Temp_Max:</p>
+
+                    </div>
+
+                </div>
+
+
+                <div id="quote">
+                    <p class="number">
+                        <i class="ri-twitter-fill" id="tweet"></i>
+                    </p>
+                    <div class="text">
+                        <i class="ri-double-quotes-l"></i>
+                        <p id="quotes" class="quotes"></p>
+                        <p id="author" class="author"></p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer code -->
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+    <script src="js/show_date_day.js"></script>
+    <script src="js/quote.js"></script>
+
+</body>
+
+</html>
